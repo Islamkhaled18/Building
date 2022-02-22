@@ -35,7 +35,7 @@
                         </h3>
                     </div><!-- /.box-header -->
                     <div class="box-body">
-                        <form class="{{ url('/adminpanel/sitesettings') }}" method="POST" enctype="multipart/form-data">
+                        <form class="{{ url('/adminpanel/sitesettings') }}" method="PUT" enctype="multipart/form-data">
                             {{csrf_field()}}
 
                             @foreach($siteSettings as $siteSetting )
